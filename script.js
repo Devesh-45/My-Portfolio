@@ -55,4 +55,8 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
     type();
 });
+const glow = document.querySelector(".cursor-glow");
 
+document.addEventListener("mousemove", (e) => {
+  glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});

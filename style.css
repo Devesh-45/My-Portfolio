@@ -11,6 +11,20 @@ body {
   color: #1a1a1a;
   overflow-x: hidden;
 }
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(69, 114, 236, 0.688);
+  box-shadow: 0 0 30px 15px rgba(65, 129, 219, 0.4);
+  pointer-events: 0;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 9999;
+}
 
 .navbar {
   display: flex;
@@ -92,6 +106,8 @@ body {
   color: #0d47f3;
   font-weight: 600;
   transition: 0.3s;
+  display: inline-block;
+  gap: 16px;
 }
 
 .btn.primary {
