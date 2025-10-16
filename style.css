@@ -22,6 +22,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -39,7 +41,7 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-right: 100px;
+  margin-right: 0px;
   font-size: 20px;
 }
 
@@ -53,7 +55,6 @@ body {
 .nav-links a:hover {
   color: #1234c0;
 }
-
 
 .hero {
   display: flex;
@@ -139,9 +140,7 @@ a {
   50% { border-color: #007bff; }
 }
 
-/* ============================= */
-/* About Section */
-/* ============================= */
+
 .about {
   text-align: center;
   padding: 4rem 10%;
@@ -197,7 +196,7 @@ a {
   margin-bottom: 2rem;
 }
 
-/* Masonry layout */
+
 .masonry-grid {
   column-count: 3;
   column-gap: 1.5rem;
@@ -218,7 +217,7 @@ a {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive */
+
 @media (max-width: 992px) {
   .masonry-grid {
     column-count: 2;
@@ -232,9 +231,6 @@ a {
 }
 
 
-/* ============================= */
-/* Skills Section */
-/* ============================= */
 .skill {
   background: #f5f9ff;
   text-align: center;
@@ -297,9 +293,7 @@ a {
   border-radius: 5px;
 }
 
-/* ============================= */
-/* Projects Section */
-/* ============================= */
+
 .projects {
   background: #f9fbff;
   text-align: center;
@@ -379,9 +373,7 @@ a {
   background: #1234c0;
 }
 
-/* ============================= */
-/* Contact Section */
-/* ============================= */
+
 .contact {
   background: linear-gradient(135deg, #1739b4, #0d47f3);
   color: white;
@@ -468,9 +460,7 @@ a {
   margin: 0.6rem 0;
 }
 
-/* ============================= */
-/* Footer */
-/* ============================= */
+
 footer {
   text-align: center;
   padding: 2rem;
@@ -479,9 +469,6 @@ footer {
   margin-top: 3rem;
 }
 
-/* ============================= */
-/* Responsive Fixes */
-/* ============================= */
 @media (max-width: 1024px) {
   .navbar {
     flex-direction: column;

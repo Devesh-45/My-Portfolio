@@ -1,4 +1,4 @@
-// Smooth scroll for navigation links
+
 document.querySelectorAll('.nav-links a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -6,7 +6,6 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     target.scrollIntoView({ behavior: 'smooth' });
   });
 });
-
 
 const words = ["Developer.", "Designer.", "Programmer."]; 
 let wordIndex = 0;
@@ -56,3 +55,4 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
     type();
 });
+
