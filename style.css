@@ -40,6 +40,12 @@ body {
   margin-right: auto;
 }
 
+.nav-links a.active {
+  color: #1234c0;
+  border-bottom: 3px solid #1234c0;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
 .logo {
   font-weight: 700;
   font-size:30px;
