@@ -127,7 +127,7 @@ body {
 
 .hero-img img {
   width: 330px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 255, 0.2);
   transform: translateX(40px);
 }
