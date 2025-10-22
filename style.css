@@ -11,20 +11,6 @@ body {
   color: #1a1a1a;
   overflow-x: hidden;
 }
-.cursor-glow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgba(69, 114, 236, 0.688);
-  box-shadow: 0 0 30px 15px rgba(65, 129, 219, 0.4);
-  pointer-events: 0;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
-  z-index: 9999;
-}
 
 .navbar {
   display: flex;
@@ -62,7 +48,7 @@ body {
   display: flex;
   gap: 1.5rem;
   margin-right: 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav-links a {
@@ -156,6 +142,7 @@ a {
   animation: blink-caret 0.75s step-end infinite;
   padding-right: 5px;
 }
+
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
@@ -256,7 +243,6 @@ a {
 .skill {
   background: #f5f9ff;
   text-align: center;
-  padding: 4rem 10%;
 }
 
 .skill h2 {
@@ -401,8 +387,6 @@ a {
   color: white;
   text-align: center;
   padding: 4rem 10%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 .contact h2 {
@@ -457,7 +441,7 @@ a {
   background: #2563eb;
   color: white;
   padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
@@ -485,10 +469,40 @@ a {
 
 footer {
   text-align: center;
-  padding: 2rem;
-  background: #f0f4ff;
+  padding: 20px 0;
+  background: transparent; /* or your desired background */
+}
+
+footer h2 {
+  margin-bottom: 15px;
+  color: #3b3636; /* adjust if needed */
+}
+
+footer p {
+  font-size: 14px;
   color: #333;
-  margin-top: 3rem;
+  margin-top: 10px;
+}
+
+
+.social-image1 {
+    margin-top: 1rem;
+  }
+
+.social-image1 img {
+    width: 30px;
+    height: 30px;
+  }
+.social-image1 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.social-image1 img:hover {
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {
@@ -593,10 +607,5 @@ footer {
 
   .project-card {
     width: 90%;
-  }
-
-  footer {
-    font-size: 0.9rem;
-    padding: 1.5rem;
   }
 }
